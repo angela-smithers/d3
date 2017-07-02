@@ -7,6 +7,7 @@ svg.selectAll("rect")
   .enter().append("rect")
 	.attr("height",function(d,i){ return d*15; })
 	.attr("width","50")
+	.attr("fill","cornflowerblue")
 	.attr("x",function(d,i){ return 60*i; })
 	.attr("y",function(d,i){ return 300-(d*15); });
 
