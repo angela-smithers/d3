@@ -5,7 +5,7 @@ var svg = d3.select("body").append("svg").attr("height","100%").attr("width","10
 svg.selectAll("rect")
   .data(dataArray)
   .enter().append("rect")
-	.attr("height",function(d,i){ return d*15; })
+	.attr("height",function(d){ return d*15; })
 	.attr("width","50")
 	.attr("fill","cornflowerblue")
 	.attr("x",function(d,i){ return 60*i; })
