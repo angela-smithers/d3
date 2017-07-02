@@ -9,11 +9,11 @@ svg.selectAll("rect")
 	.attr("width","50")
 	.attr("fill","cornflowerblue")
 	.attr("x",function(d,i){ return 60*i; })
-	.attr("y",function(d,i){ return 300-(d*15); })
+	.attr("y",function(d,i){ return 300-(d*15); });
 
 svg.selectAll("circle")
   .data(dataArray)
   .enter().append("circle")
-	.attr("cx",function(d,i){return 300+(i*20); })
+	.attr("cx",function(d,i){return 300+(i*22); })
 	.attr("cy","100")
-	.attr("r","10");
+	.attr("r",function(d,i){ return d*3; });
