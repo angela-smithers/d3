@@ -21,9 +21,9 @@ svg.selectAll("circle.first")
 	.attr("r",function(d,i){ return d*3; });
 
 var newX = 600;
-svg.selectAll("circle")
+svg.selectAll("circle.second")
   .data(dataArray)
-  .enter().append("circle.second")
+  .enter().append("circle")
 	.attr("class","second")
 	.attr("cx",function(d,i){ newX+=(d*8)+(i*20); return newX; })
 	.attr("cy","100")
