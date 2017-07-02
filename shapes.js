@@ -7,6 +7,6 @@ svg.selectAll("rect")
   .enter().append("rect")
 	.attr("height","200")
 	.attr("width","50")
-	.attr("x","20")
-	.attr("y","20");
+	.attr("x",function(d,i){return 60*i; })
+	.attr("y","100");
 
