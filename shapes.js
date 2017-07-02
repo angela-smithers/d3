@@ -8,5 +8,5 @@ svg.selectAll("rect")
 	.attr("height",function(d,i){ return d*15; })
 	.attr("width","50")
 	.attr("x",function(d,i){ return 60*i; })
-	.attr("y","100");
+	.attr("y",function(d,i){ return 300; });
 
