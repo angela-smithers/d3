@@ -9,7 +9,7 @@ svg.selectAll("rect")
 	.attr("width","50")
 	.attr("fill","cornflowerblue")
 	.attr("x",function(d,i){ return 60*i; })
-	.attr("y",function(d,i){ return 300-(d*15); });
+	.attr("y",function(d,i){ return 300-(d*15); })
 
 svg.selectAll("circle")
   .data(dataArray)
