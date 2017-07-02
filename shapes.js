@@ -5,8 +5,8 @@ var svg = d3.select("body").append("svg").attr("height","100%").attr("width","10
 svg.selectAll("rect")
   .data(dataArray)
   .enter().append("rect")
-	.attr("height","200")
+	.attr("height",function(d,i){ return d;})
 	.attr("width","50")
-	.attr("x",function(d,i){return 60*i; })
+	.attr("x",function(d,i){ return 60*i; })
 	.attr("y","100");
 
