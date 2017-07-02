@@ -4,9 +4,9 @@ var svg = d3.select("body").append("svg").attr("height","100%").attr("width","10
 
 svg.selectAll("rect")
   .data(dataArray)
-  .enter().append("rect");
-					.attr("height","200")
-					.attr("width","50")
-					.attr("x","20")
-					.attr("y","20");
+  .enter().append("rect")
+	.attr("height","200")
+	.attr("width","50")
+	.attr("x","20")
+	.attr("y","20");
 
