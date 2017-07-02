@@ -11,9 +11,10 @@ svg.selectAll("rect")
 	.attr("x",function(d,i){ return 60*i; })
 	.attr("y",function(d,i){ return 300-(d*15); });
 
+var newX = 300;
 svg.selectAll("circle")
   .data(dataArray)
   .enter().append("circle")
-	.attr("cx",function(d,i){return 300+(i*22); })
+	.attr("cx",function(d,i){ newX+=(d*12)+(i*20); return newX; })
 	.attr("cy","100")
 	.attr("r",function(d,i){ return d*3; });
