@@ -5,11 +5,11 @@ var svg = d3.select("body").append("svg").attr("height","100%").attr("width","10
 svg.selectAll("rect")
   .data(dataArray)
   .enter().append("rect")
-	.attr("height",function(d,i){ return d*7; })
+	.attr("height",function(d,i){ return d*10; })
 	.attr("width","50")
 	.attr("fill","cornflowerblue")
 	.attr("x",function(d,i){ return 60*i; })
-	.attr("y",function(d,i){ return 200-(d*15); });
+	.attr("y",function(d,i){ return 325-(d*10); });
 
 var newX = 300;
 svg.selectAll("circle")
