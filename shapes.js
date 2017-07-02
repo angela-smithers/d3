@@ -12,9 +12,19 @@ svg.selectAll("rect")
 	.attr("y",function(d,i){ return 120-(d*10); });
 
 var newX = 300;
-svg.selectAll("circle")
+svg.selectAll("circle.first")
   .data(dataArray)
   .enter().append("circle")
+	.attr("class","first")
+	.attr("cx",function(d,i){ newX+=(d*6)+(i*20); return newX; })
+	.attr("cy","100")
+	.attr("r",function(d,i){ return d*3; });
+
+var newX = 600;
+svg.selectAll("circle")
+  .data(dataArray)
+  .enter().append("circle.second")
+	.attr("class","second")
 	.attr("cx",function(d,i){ newX+=(d*8)+(i*20); return newX; })
 	.attr("cy","100")
 	.attr("r",function(d,i){ return d*3; });
