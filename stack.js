@@ -15,7 +15,7 @@ d3.xml("data2.xml").get(function(error,xml){
     };
   })
   var x = d3.scaleTime()
-      .domain(d3.extend(xml,function(d){ return d.date; }))
+      .domain(d3.extent(xml,function(d){ return d.date; }))
       .range([0,width]);
   var y = d3.scaleLinear()
       .domain(0,d3.max(xml,function(d){ return d.top+d.middle+d.bottom; }))
