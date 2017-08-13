@@ -13,8 +13,8 @@ d3.xml("data2.xml").get(function(error,xml){
       middle: +d.querySelector("middle").textContent,
       bottom: +d.querySelector("bottom").textContent
     };
-  })
-  var x =d3.scaleTime()
+  });
+  var x = d3.scaleTime()
       .domain(d3.extend(xml,function(d){ return d.date; }))
       .range([0,width]);
   vay y = d3.scaleLinear()
