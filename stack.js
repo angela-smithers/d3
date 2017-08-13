@@ -20,7 +20,7 @@ d3.xml("data2.xml").get(function(error,xml){
   vay y = d3.scaleLinear()
       .domain(0,d3.max(xml,function(d){ return d.top+d.middle+d.bottom; }))
       .range([height,0]);
-  var categories = ['top','middle','bottom']
+  var categories = ['top','middle','bottom'];
   
   var stack = d3.stack().keys(categories);
   
