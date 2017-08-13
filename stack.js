@@ -1,4 +1,4 @@
-var parseDate = d3.timeParse("%Y")
+var parseDate = d3.timeParse("%Y");
 
 d3.xml("data2.xml").get(function(error,xml){
   
