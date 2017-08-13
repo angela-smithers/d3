@@ -30,7 +30,7 @@
     .selectAll("path")
         .data(voronoi.polygons(vertices))
         .enter().append("path")  
-          .attr("d",function(d){ return "M"+d.join("L")+"Z" });
+          .attr("d",function(d){ return "M"+d.join("L")+"Z"; });
     
     </script>
   </body>
